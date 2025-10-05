@@ -1,11 +1,10 @@
 package com.AbstractFJVW;
 
-public class FabricaRock {
+public class FabricaRock implements FabricaProducao {
     public Iluminacao criarIluminacao() {
         return new IluminacaoSpot();
     }
-
-    public EstruturaPalco criarEstrutura() {
+    public EstruturaPalco criarEstruturaPalco() {
         return new EstruturaRobusta();
     }
 }
