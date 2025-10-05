@@ -13,7 +13,7 @@ class ProdutorTest {
         assertEquals("Rock", produtor.getTipoFestival());
 
         // Iluminação correta
-        String iluminacaoEsperada = "Iluminação com Spots de cores quentes e fumaça para rock.";
+        String iluminacaoEsperada = "Iluminação com Spots de cores quentes e fumaça para rock. (Voltagem: 220V)";
         assertEquals(iluminacaoEsperada, produtor.configurarIluminacao());
 
         // Estrutura de Palco correta

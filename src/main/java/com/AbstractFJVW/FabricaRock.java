@@ -1,8 +1,10 @@
 package com.AbstractFJVW;
 
 public class FabricaRock implements FabricaProducao {
+    private static final int VOLTAGEM_IDEAL = 220;
+
     public Iluminacao criarIluminacao() {
-        return new IluminacaoSpot();
+        return new IluminacaoSpot(VOLTAGEM_IDEAL);
     }
     public EstruturaPalco criarEstruturaPalco() {
         return new EstruturaRobusta();
